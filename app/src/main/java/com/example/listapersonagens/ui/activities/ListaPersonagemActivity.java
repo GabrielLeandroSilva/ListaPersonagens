@@ -68,5 +68,5 @@ public class ListaPersonagemActivity extends AppCompatActivity {
         });
 
     }
-    
+
 }
