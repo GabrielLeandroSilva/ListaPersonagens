@@ -1,12 +1,14 @@
 package com.example.listapersonagens.model;
 
+import android.util.Log;
+
 public class Personagem {
     //Variaveis para guardar a informação de nome, altura e nascimento para manipulação do get e set
     private final String nome;
     private final String altura;
     private final String nascimento;
 
-
+    //Metodo para coletar as informações do personagem
     public Personagem(String nome, String altura, String nascimento) {
         this.nome = nome;
         this.altura = altura;

@@ -28,11 +28,8 @@ public class ListaPersonagemActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         //Lista estatica com nomes dos personagens
        // List<String> personagem = new ArrayList<>(Arrays.asList("Alex", "Ken", "Ryu", "Chunli"));
-
 
     }
 
