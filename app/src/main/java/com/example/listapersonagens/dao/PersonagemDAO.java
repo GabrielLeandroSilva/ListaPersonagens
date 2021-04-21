@@ -32,8 +32,26 @@ public class PersonagemDAO {
 
     }
 
+    //Metodo para realizar uma busca de personagem por id
+    private Personagem buscarPersonagemId(Personagem personagem) {
+        for (Personagem p : personagens) {
+            if(p.getId() == personagem.getId()) {
+                return p;
+            }
+        }
+        return null;
+    }
+
     //Metodo para exibir os personagens salvos (todos)
     public List<Personagem> todos() {
         return new ArrayList<>(personagens);
+    }
+
+    //Metodo para remover um personagem da lista
+    public void remove(Personagem personagem) {
+        Personagem personagemDevolvido = buscarPersonagemId(personagem);
+        if(personagemDevolvido != null) {
+            personagens.remove(personagemDevolvido);
+        }
     }
 }
